@@ -1,0 +1,212 @@
+@import "tailwindcss";
+
+/*
+ * nextrun — Coach's Paper Logbook world.
+ * Paper ground, ink text, red-pencil coach marks, sage for what's done.
+ * Pages are ruled log sheets; weeks are rows, not cards.
+ */
+:root {
+  --paper: #f7f8f6;
+  --paper-raised: #fdfdfc;
+  --paper-shade: #eef0ee;
+  --ink: #22252a;
+  --ink-soft: #545a62;
+  --ink-faint: #848b94;
+  --rule: #ccd6e2;
+  --rule-strong: #a8b8c9;
+  --pencil-red: #bc3a2a;
+  --pencil-red-deep: #98291c;
+  --sage: #2f6b45;
+  --sage-soft: #e9f1ec;
+  --amber-pencil: #96691d;
+  --amber-soft: #f5efdc;
+  --red-soft: #f7e9e6;
+  --cloth: #21402e;
+  --cloth-deep: #182f22;
+  --cloth-text: #e6eee8;
+  --cloth-text-dim: #a9bfb0;
+
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --color-error: var(--pencil-red-deep);
+  --color-success: var(--sage);
+  --color-warning: var(--amber-pencil);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-paper: var(--paper);
+  --color-paper-raised: var(--paper-raised);
+  --color-paper-shade: var(--paper-shade);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-faint: var(--ink-faint);
+  --color-rule: var(--rule);
+  --color-rule-strong: var(--rule-strong);
+  --color-pencil-red: var(--pencil-red);
+  --color-pencil-red-deep: var(--pencil-red-deep);
+  --color-sage: var(--sage);
+  --color-sage-soft: var(--sage-soft);
+  --color-amber-pencil: var(--amber-pencil);
+  --color-amber-soft: var(--amber-soft);
+  --color-red-soft: var(--red-soft);
+  --font-sans: var(--font-ui);
+  --font-mono: var(--font-data);
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-ui), system-ui, sans-serif;
+}
+
+/* Browser surfaces carry the world too */
+::selection {
+  background: color-mix(in srgb, var(--pencil-red) 18%, transparent);
+}
+:focus-visible {
+  outline: 2px solid var(--pencil-red);
+  outline-offset: 2px;
+}
+input,
+textarea {
+  caret-color: var(--pencil-red);
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px var(--paper-raised) inset;
+  -webkit-text-fill-color: var(--ink);
+  caret-color: var(--pencil-red);
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--rule-strong) transparent;
+}
+a {
+  text-underline-offset: 3px;
+}
+[type="number"],
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Log-sheet ground: the ledger's red vertical margin line, entry content
+   sitting right of it. Horizontal rules live only as structural row
+   separators elsewhere — decorative rules behind prose strike through it. */
+.log-sheet {
+  background-color: var(--paper-raised);
+  background-image: linear-gradient(
+    to right,
+    transparent 0,
+    transparent 1.625rem,
+    var(--pencil-red) 1.625rem,
+    var(--pencil-red) calc(1.625rem + 1.5px),
+    transparent calc(1.625rem + 1.5px)
+  );
+}
+
+/* Paper tooth: faint fractal grain over the ground */
+.paper-tooth {
+  position: relative;
+}
+.paper-tooth::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='t'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.13 0 0 0 0 0.14 0 0 0 0 0.16 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23t)'/%3E%3C/svg%3E");
+}
+
+/* Buckram cloth weave for the cover chrome */
+.buckram {
+  background-color: var(--cloth);
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.035) 0,
+      rgba(255, 255, 255, 0.035) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.09) 0,
+      rgba(0, 0, 0, 0.09) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+}
+
+/* Coach annotation: the working face in italic, pencil-red — a draftsman's
+   margin note, not a script hand */
+.coach-note {
+  font-style: italic;
+  color: var(--pencil-red);
+}
+
+/* Rubber date/phase stamp */
+.stamp {
+  font-family: var(--font-ui), sans-serif;
+  font-weight: 700;
+  font-stretch: condensed;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border: 1.5px solid currentColor;
+  border-radius: 3px;
+  padding: 0.1em 0.45em;
+  transform: rotate(-1.5deg);
+  display: inline-block;
+}
+
+/* The signature moment: a coach note's underline draws itself in once */
+.pencil-stroke path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: draw-stroke 480ms cubic-bezier(0.3, 0, 0.2, 1) 120ms forwards;
+}
+@keyframes draw-stroke {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Pencil tick for completed rows */
+@keyframes draw-check {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.pencil-check path {
+  stroke-dasharray: 24;
+  stroke-dashoffset: 24;
+  animation: draw-check 260ms ease-out forwards;
+}
+
+/* Skeleton shimmer on paper */
+@keyframes paper-pulse {
+  0%,
+  100% {
+    background-color: var(--paper-shade);
+  }
+  50% {
+    background-color: var(--rule);
+  }
+}
+.skeleton {
+  animation: paper-pulse 1.6s ease-in-out infinite;
+  border-radius: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pencil-stroke path,
+  .pencil-check path {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+  .skeleton {
+    animation: none;
+  }
+}

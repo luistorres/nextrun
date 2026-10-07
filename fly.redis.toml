@@ -1,0 +1,19 @@
+# Self-hosted Redis on the Fly private network (no public services exposed).
+# Predictable cost vs Upstash pay-per-command — BullMQ polls constantly.
+# Deploy: fly deploy -c fly.redis.toml
+app = "nextrun-redis"
+primary_region = "cdg"
+
+[build]
+  image = "redis:7-alpine"
+
+[mounts]
+  source = "redis_data"
+  destination = "/data"
+
+[processes]
+  app = "redis-server --appendonly yes --dir /data"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "256mb"

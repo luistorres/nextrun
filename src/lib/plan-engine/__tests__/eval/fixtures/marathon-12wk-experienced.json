@@ -1,0 +1,1815 @@
+{
+  "totalWeeks": 12,
+  "phases": [
+    {
+      "phase": "base",
+      "startWeek": 1,
+      "endWeek": 5
+    },
+    {
+      "phase": "build",
+      "startWeek": 6,
+      "endWeek": 8
+    },
+    {
+      "phase": "peak",
+      "startWeek": 9,
+      "endWeek": 10
+    },
+    {
+      "phase": "taper",
+      "startWeek": 11,
+      "endWeek": 12
+    }
+  ],
+  "weeks": [
+    {
+      "weekNumber": 1,
+      "phase": "base",
+      "weeklyMileageTargetKm": 52,
+      "explanation": "Base week 1 — settle into the rhythm with one VO2 touch.",
+      "workouts": [
+        {
+          "day": "monday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 9.5km at conversational effort.",
+          "targetDistanceMeters": 9500,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 9500,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "tuesday",
+          "type": "intervals",
+          "title": "Intervals 6x600m",
+          "description": "6x600m at 5K effort with 90s jog recovery, 8km total.",
+          "targetDistanceMeters": 8000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "warmup",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy warmup jog"
+            },
+            {
+              "order": 2,
+              "type": "interval",
+              "repeatCount": 6,
+              "workStep": {
+                "durationType": "distance",
+                "durationValue": 600,
+                "targetType": "pace",
+                "targetMin": 215,
+                "targetMax": 230
+              },
+              "restStep": {
+                "durationType": "time",
+                "durationValue": 90,
+                "targetType": "open"
+              },
+              "description": "600m hard / 90s easy jog"
+            },
+            {
+              "order": 3,
+              "type": "cooldown",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy cooldown jog"
+            }
+          ]
+        },
+        {
+          "day": "wednesday",
+          "type": "rest",
+          "title": "Rest day",
+          "description": "Full rest — recovery is where adaptation happens.",
+          "steps": []
+        },
+        {
+          "day": "thursday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 9.5km at conversational effort.",
+          "targetDistanceMeters": 9500,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 9500,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "friday",
+          "type": "rest",
+          "title": "Rest day",
+          "description": "Full rest — recovery is where adaptation happens.",
+          "steps": []
+        },
+        {
+          "day": "saturday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 9.5km at conversational effort.",
+          "targetDistanceMeters": 9500,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 9500,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "sunday",
+          "type": "long_run",
+          "title": "Long run",
+          "description": "Weekly long run, 15.5km at steady easy effort.",
+          "targetDistanceMeters": 15500,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 15500,
+              "targetType": "pace",
+              "targetMin": 335,
+              "targetMax": 365,
+              "description": "Steady long run pace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 2,
+      "phase": "base",
+      "weeklyMileageTargetKm": 58,
+      "explanation": "Base week 2 — volume nudges up, threshold work begins.",
+      "workouts": [
+        {
+          "day": "monday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 10.5km at conversational effort.",
+          "targetDistanceMeters": 10500,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 10500,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "tuesday",
+          "type": "tempo",
+          "title": "Tempo run",
+          "description": "5.3km continuous tempo at threshold effort, 8.5km total.",
+          "targetDistanceMeters": 8500,
+          "steps": [
+            {
+              "order": 1,
+              "type": "warmup",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy warmup jog"
+            },
+            {
+              "order": 2,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 5300,
+              "targetType": "pace",
+              "targetMin": 255,
+              "targetMax": 270,
+              "description": "Threshold pace"
+            },
+            {
+              "order": 3,
+              "type": "cooldown",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy cooldown jog"
+            }
+          ]
+        },
+        {
+          "day": "wednesday",
+          "type": "rest",
+          "title": "Rest day",
+          "description": "Full rest — recovery is where adaptation happens.",
+          "steps": []
+        },
+        {
+          "day": "thursday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 10.5km at conversational effort.",
+          "targetDistanceMeters": 10500,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 10500,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "friday",
+          "type": "rest",
+          "title": "Rest day",
+          "description": "Full rest — recovery is where adaptation happens.",
+          "steps": []
+        },
+        {
+          "day": "saturday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 11km at conversational effort.",
+          "targetDistanceMeters": 11000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 11000,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "sunday",
+          "type": "long_run",
+          "title": "Long run",
+          "description": "Weekly long run, 17.5km at steady easy effort.",
+          "targetDistanceMeters": 17500,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 17500,
+              "targetType": "pace",
+              "targetMin": 335,
+              "targetMax": 365,
+              "description": "Steady long run pace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 3,
+      "phase": "base",
+      "weeklyMileageTargetKm": 64,
+      "explanation": "Base week 3 — final loading week of the first cycle.",
+      "workouts": [
+        {
+          "day": "monday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 12km at conversational effort.",
+          "targetDistanceMeters": 12000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 12000,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "tuesday",
+          "type": "intervals",
+          "title": "Intervals 8x600m",
+          "description": "8x600m at 5K effort with 90s jog recovery, 9.5km total.",
+          "targetDistanceMeters": 9500,
+          "steps": [
+            {
+              "order": 1,
+              "type": "warmup",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy warmup jog"
+            },
+            {
+              "order": 2,
+              "type": "interval",
+              "repeatCount": 8,
+              "workStep": {
+                "durationType": "distance",
+                "durationValue": 600,
+                "targetType": "pace",
+                "targetMin": 215,
+                "targetMax": 230
+              },
+              "restStep": {
+                "durationType": "time",
+                "durationValue": 90,
+                "targetType": "open"
+              },
+              "description": "600m hard / 90s easy jog"
+            },
+            {
+              "order": 3,
+              "type": "cooldown",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy cooldown jog"
+            }
+          ]
+        },
+        {
+          "day": "wednesday",
+          "type": "rest",
+          "title": "Rest day",
+          "description": "Full rest — recovery is where adaptation happens.",
+          "steps": []
+        },
+        {
+          "day": "thursday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 12km at conversational effort.",
+          "targetDistanceMeters": 12000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 12000,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "friday",
+          "type": "rest",
+          "title": "Rest day",
+          "description": "Full rest — recovery is where adaptation happens.",
+          "steps": []
+        },
+        {
+          "day": "saturday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 11.5km at conversational effort.",
+          "targetDistanceMeters": 11500,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 11500,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "sunday",
+          "type": "long_run",
+          "title": "Long run",
+          "description": "Weekly long run, 19km at steady easy effort.",
+          "targetDistanceMeters": 19000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 19000,
+              "targetType": "pace",
+              "targetMin": 335,
+              "targetMax": 365,
+              "description": "Steady long run pace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 4,
+      "phase": "base",
+      "weeklyMileageTargetKm": 48,
+      "explanation": "Step-back week — 25% volume cut to absorb the first cycle.",
+      "workouts": [
+        {
+          "day": "monday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 9km at conversational effort.",
+          "targetDistanceMeters": 9000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 9000,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "tuesday",
+          "type": "tempo",
+          "title": "Tempo run",
+          "description": "2.8km continuous tempo at threshold effort, 6km total.",
+          "targetDistanceMeters": 6000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "warmup",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy warmup jog"
+            },
+            {
+              "order": 2,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 2800,
+              "targetType": "pace",
+              "targetMin": 255,
+              "targetMax": 270,
+              "description": "Threshold pace"
+            },
+            {
+              "order": 3,
+              "type": "cooldown",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy cooldown jog"
+            }
+          ]
+        },
+        {
+          "day": "wednesday",
+          "type": "rest",
+          "title": "Rest day",
+          "description": "Full rest — recovery is where adaptation happens.",
+          "steps": []
+        },
+        {
+          "day": "thursday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 9km at conversational effort.",
+          "targetDistanceMeters": 9000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 9000,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "friday",
+          "type": "rest",
+          "title": "Rest day",
+          "description": "Full rest — recovery is where adaptation happens.",
+          "steps": []
+        },
+        {
+          "day": "saturday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 9.5km at conversational effort.",
+          "targetDistanceMeters": 9500,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 9500,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "sunday",
+          "type": "long_run",
+          "title": "Long run",
+          "description": "Weekly long run, 14.5km at steady easy effort.",
+          "targetDistanceMeters": 14500,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 14500,
+              "targetType": "pace",
+              "targetMin": 335,
+              "targetMax": 365,
+              "description": "Steady long run pace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 5,
+      "phase": "base",
+      "weeklyMileageTargetKm": 66,
+      "explanation": "Back above the pre-step-back trajectory to close the base phase.",
+      "workouts": [
+        {
+          "day": "monday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 12km at conversational effort.",
+          "targetDistanceMeters": 12000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 12000,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "tuesday",
+          "type": "intervals",
+          "title": "Intervals 8x600m",
+          "description": "8x600m at 5K effort with 90s jog recovery, 10km total.",
+          "targetDistanceMeters": 10000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "warmup",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy warmup jog"
+            },
+            {
+              "order": 2,
+              "type": "interval",
+              "repeatCount": 8,
+              "workStep": {
+                "durationType": "distance",
+                "durationValue": 600,
+                "targetType": "pace",
+                "targetMin": 215,
+                "targetMax": 230
+              },
+              "restStep": {
+                "durationType": "time",
+                "durationValue": 90,
+                "targetType": "open"
+              },
+              "description": "600m hard / 90s easy jog"
+            },
+            {
+              "order": 3,
+              "type": "cooldown",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy cooldown jog"
+            }
+          ]
+        },
+        {
+          "day": "wednesday",
+          "type": "rest",
+          "title": "Rest day",
+          "description": "Full rest — recovery is where adaptation happens.",
+          "steps": []
+        },
+        {
+          "day": "thursday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 12km at conversational effort.",
+          "targetDistanceMeters": 12000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 12000,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "friday",
+          "type": "rest",
+          "title": "Rest day",
+          "description": "Full rest — recovery is where adaptation happens.",
+          "steps": []
+        },
+        {
+          "day": "saturday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 12km at conversational effort.",
+          "targetDistanceMeters": 12000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 12000,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "sunday",
+          "type": "long_run",
+          "title": "Long run",
+          "description": "Weekly long run, 20km at steady easy effort.",
+          "targetDistanceMeters": 20000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 20000,
+              "targetType": "pace",
+              "targetMin": 335,
+              "targetMax": 365,
+              "description": "Steady long run pace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 6,
+      "phase": "build",
+      "weeklyMileageTargetKm": 70,
+      "explanation": "Build phase opens — marathon-pace work joins the weekly mix.",
+      "workouts": [
+        {
+          "day": "monday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 16km at conversational effort.",
+          "targetDistanceMeters": 16000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 16000,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "tuesday",
+          "type": "intervals",
+          "title": "Intervals 7x600m",
+          "description": "7x600m at 5K effort with 90s jog recovery, 9km total.",
+          "targetDistanceMeters": 9000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "warmup",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy warmup jog"
+            },
+            {
+              "order": 2,
+              "type": "interval",
+              "repeatCount": 7,
+              "workStep": {
+                "durationType": "distance",
+                "durationValue": 600,
+                "targetType": "pace",
+                "targetMin": 215,
+                "targetMax": 230
+              },
+              "restStep": {
+                "durationType": "time",
+                "durationValue": 90,
+                "targetType": "open"
+              },
+              "description": "600m hard / 90s easy jog"
+            },
+            {
+              "order": 3,
+              "type": "cooldown",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy cooldown jog"
+            }
+          ]
+        },
+        {
+          "day": "wednesday",
+          "type": "rest",
+          "title": "Rest day",
+          "description": "Full rest — recovery is where adaptation happens.",
+          "steps": []
+        },
+        {
+          "day": "thursday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 15.5km at conversational effort.",
+          "targetDistanceMeters": 15500,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 15500,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "friday",
+          "type": "rest",
+          "title": "Rest day",
+          "description": "Full rest — recovery is where adaptation happens.",
+          "steps": []
+        },
+        {
+          "day": "saturday",
+          "type": "race_pace",
+          "title": "Race pace session",
+          "description": "5.3km at goal race pace, 8.5km total.",
+          "targetDistanceMeters": 8500,
+          "steps": [
+            {
+              "order": 1,
+              "type": "warmup",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy warmup jog"
+            },
+            {
+              "order": 2,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 5300,
+              "targetType": "pace",
+              "targetMin": 285,
+              "targetMax": 300,
+              "description": "Goal race pace"
+            },
+            {
+              "order": 3,
+              "type": "cooldown",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy cooldown jog"
+            }
+          ]
+        },
+        {
+          "day": "sunday",
+          "type": "long_run",
+          "title": "Long run",
+          "description": "Weekly long run, 21km at steady easy effort.",
+          "targetDistanceMeters": 21000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 21000,
+              "targetType": "pace",
+              "targetMin": 335,
+              "targetMax": 365,
+              "description": "Steady long run pace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 7,
+      "phase": "build",
+      "weeklyMileageTargetKm": 74,
+      "explanation": "Biggest build week so far; two quality sessions, well separated.",
+      "workouts": [
+        {
+          "day": "monday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 17km at conversational effort.",
+          "targetDistanceMeters": 17000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 17000,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "tuesday",
+          "type": "tempo",
+          "title": "Tempo run",
+          "description": "6.3km continuous tempo at threshold effort, 9.5km total.",
+          "targetDistanceMeters": 9500,
+          "steps": [
+            {
+              "order": 1,
+              "type": "warmup",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy warmup jog"
+            },
+            {
+              "order": 2,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 6300,
+              "targetType": "pace",
+              "targetMin": 255,
+              "targetMax": 270,
+              "description": "Threshold pace"
+            },
+            {
+              "order": 3,
+              "type": "cooldown",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy cooldown jog"
+            }
+          ]
+        },
+        {
+          "day": "wednesday",
+          "type": "rest",
+          "title": "Rest day",
+          "description": "Full rest — recovery is where adaptation happens.",
+          "steps": []
+        },
+        {
+          "day": "thursday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 16.5km at conversational effort.",
+          "targetDistanceMeters": 16500,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 16500,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "friday",
+          "type": "rest",
+          "title": "Rest day",
+          "description": "Full rest — recovery is where adaptation happens.",
+          "steps": []
+        },
+        {
+          "day": "saturday",
+          "type": "intervals",
+          "title": "Intervals 7x600m",
+          "description": "7x600m at 5K effort with 90s jog recovery, 9km total.",
+          "targetDistanceMeters": 9000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "warmup",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy warmup jog"
+            },
+            {
+              "order": 2,
+              "type": "interval",
+              "repeatCount": 7,
+              "workStep": {
+                "durationType": "distance",
+                "durationValue": 600,
+                "targetType": "pace",
+                "targetMin": 215,
+                "targetMax": 230
+              },
+              "restStep": {
+                "durationType": "time",
+                "durationValue": 90,
+                "targetType": "open"
+              },
+              "description": "600m hard / 90s easy jog"
+            },
+            {
+              "order": 3,
+              "type": "cooldown",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy cooldown jog"
+            }
+          ]
+        },
+        {
+          "day": "sunday",
+          "type": "long_run",
+          "title": "Long run",
+          "description": "Weekly long run, 22km at steady easy effort.",
+          "targetDistanceMeters": 22000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 22000,
+              "targetType": "pace",
+              "targetMin": 335,
+              "targetMax": 365,
+              "description": "Steady long run pace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 8,
+      "phase": "build",
+      "weeklyMileageTargetKm": 56,
+      "explanation": "Step-back week — 24% cut before the peak block.",
+      "workouts": [
+        {
+          "day": "monday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 10.5km at conversational effort.",
+          "targetDistanceMeters": 10500,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 10500,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "tuesday",
+          "type": "intervals",
+          "title": "Intervals 6x600m",
+          "description": "6x600m at 5K effort with 90s jog recovery, 8km total.",
+          "targetDistanceMeters": 8000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "warmup",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy warmup jog"
+            },
+            {
+              "order": 2,
+              "type": "interval",
+              "repeatCount": 6,
+              "workStep": {
+                "durationType": "distance",
+                "durationValue": 600,
+                "targetType": "pace",
+                "targetMin": 215,
+                "targetMax": 230
+              },
+              "restStep": {
+                "durationType": "time",
+                "durationValue": 90,
+                "targetType": "open"
+              },
+              "description": "600m hard / 90s easy jog"
+            },
+            {
+              "order": 3,
+              "type": "cooldown",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy cooldown jog"
+            }
+          ]
+        },
+        {
+          "day": "wednesday",
+          "type": "rest",
+          "title": "Rest day",
+          "description": "Full rest — recovery is where adaptation happens.",
+          "steps": []
+        },
+        {
+          "day": "thursday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 10.5km at conversational effort.",
+          "targetDistanceMeters": 10500,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 10500,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "friday",
+          "type": "rest",
+          "title": "Rest day",
+          "description": "Full rest — recovery is where adaptation happens.",
+          "steps": []
+        },
+        {
+          "day": "saturday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 10km at conversational effort.",
+          "targetDistanceMeters": 10000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 10000,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "sunday",
+          "type": "long_run",
+          "title": "Long run",
+          "description": "Weekly long run, 17km at steady easy effort.",
+          "targetDistanceMeters": 17000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 17000,
+              "targetType": "pace",
+              "targetMin": 335,
+              "targetMax": 365,
+              "description": "Steady long run pace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 9,
+      "phase": "peak",
+      "weeklyMileageTargetKm": 76,
+      "explanation": "Peak week 1 — highest sustainable load with race-specific work.",
+      "workouts": [
+        {
+          "day": "monday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 16.5km at conversational effort.",
+          "targetDistanceMeters": 16500,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 16500,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "tuesday",
+          "type": "intervals",
+          "title": "Intervals 8x600m",
+          "description": "8x600m at 5K effort with 90s jog recovery, 10km total.",
+          "targetDistanceMeters": 10000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "warmup",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy warmup jog"
+            },
+            {
+              "order": 2,
+              "type": "interval",
+              "repeatCount": 8,
+              "workStep": {
+                "durationType": "distance",
+                "durationValue": 600,
+                "targetType": "pace",
+                "targetMin": 215,
+                "targetMax": 230
+              },
+              "restStep": {
+                "durationType": "time",
+                "durationValue": 90,
+                "targetType": "open"
+              },
+              "description": "600m hard / 90s easy jog"
+            },
+            {
+              "order": 3,
+              "type": "cooldown",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy cooldown jog"
+            }
+          ]
+        },
+        {
+          "day": "wednesday",
+          "type": "rest",
+          "title": "Rest day",
+          "description": "Full rest — recovery is where adaptation happens.",
+          "steps": []
+        },
+        {
+          "day": "thursday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 16.5km at conversational effort.",
+          "targetDistanceMeters": 16500,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 16500,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "friday",
+          "type": "rest",
+          "title": "Rest day",
+          "description": "Full rest — recovery is where adaptation happens.",
+          "steps": []
+        },
+        {
+          "day": "saturday",
+          "type": "race_pace",
+          "title": "Race pace session",
+          "description": "6.8km at goal race pace, 10km total.",
+          "targetDistanceMeters": 10000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "warmup",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy warmup jog"
+            },
+            {
+              "order": 2,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 6800,
+              "targetType": "pace",
+              "targetMin": 285,
+              "targetMax": 300,
+              "description": "Goal race pace"
+            },
+            {
+              "order": 3,
+              "type": "cooldown",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy cooldown jog"
+            }
+          ]
+        },
+        {
+          "day": "sunday",
+          "type": "long_run",
+          "title": "Long run",
+          "description": "Weekly long run, 23km at steady easy effort.",
+          "targetDistanceMeters": 23000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 23000,
+              "targetType": "pace",
+              "targetMin": 335,
+              "targetMax": 365,
+              "description": "Steady long run pace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 10,
+      "phase": "peak",
+      "weeklyMileageTargetKm": 78,
+      "explanation": "Peak week 2 — final big long run and race-pace rehearsal.",
+      "workouts": [
+        {
+          "day": "monday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 17.5km at conversational effort.",
+          "targetDistanceMeters": 17500,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 17500,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "tuesday",
+          "type": "tempo",
+          "title": "Tempo run",
+          "description": "6.8km continuous tempo at threshold effort, 10km total.",
+          "targetDistanceMeters": 10000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "warmup",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy warmup jog"
+            },
+            {
+              "order": 2,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 6800,
+              "targetType": "pace",
+              "targetMin": 255,
+              "targetMax": 270,
+              "description": "Threshold pace"
+            },
+            {
+              "order": 3,
+              "type": "cooldown",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy cooldown jog"
+            }
+          ]
+        },
+        {
+          "day": "wednesday",
+          "type": "rest",
+          "title": "Rest day",
+          "description": "Full rest — recovery is where adaptation happens.",
+          "steps": []
+        },
+        {
+          "day": "thursday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 17.5km at conversational effort.",
+          "targetDistanceMeters": 17500,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 17500,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "friday",
+          "type": "rest",
+          "title": "Rest day",
+          "description": "Full rest — recovery is where adaptation happens.",
+          "steps": []
+        },
+        {
+          "day": "saturday",
+          "type": "race_pace",
+          "title": "Race pace session",
+          "description": "6.3km at goal race pace, 9.5km total.",
+          "targetDistanceMeters": 9500,
+          "steps": [
+            {
+              "order": 1,
+              "type": "warmup",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy warmup jog"
+            },
+            {
+              "order": 2,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 6300,
+              "targetType": "pace",
+              "targetMin": 285,
+              "targetMax": 300,
+              "description": "Goal race pace"
+            },
+            {
+              "order": 3,
+              "type": "cooldown",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy cooldown jog"
+            }
+          ]
+        },
+        {
+          "day": "sunday",
+          "type": "long_run",
+          "title": "Long run",
+          "description": "Weekly long run, 23.5km at steady easy effort.",
+          "targetDistanceMeters": 23500,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 23500,
+              "targetType": "pace",
+              "targetMin": 335,
+              "targetMax": 365,
+              "description": "Steady long run pace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 11,
+      "phase": "taper",
+      "weeklyMileageTargetKm": 50,
+      "explanation": "Taper week 1 — volume drops ~35% from peak, intensity stays.",
+      "workouts": [
+        {
+          "day": "monday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 9.5km at conversational effort.",
+          "targetDistanceMeters": 9500,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 9500,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "tuesday",
+          "type": "intervals",
+          "title": "Intervals 5x600m",
+          "description": "5x600m at 5K effort with 90s jog recovery, 7km total.",
+          "targetDistanceMeters": 7000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "warmup",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy warmup jog"
+            },
+            {
+              "order": 2,
+              "type": "interval",
+              "repeatCount": 5,
+              "workStep": {
+                "durationType": "distance",
+                "durationValue": 600,
+                "targetType": "pace",
+                "targetMin": 215,
+                "targetMax": 230
+              },
+              "restStep": {
+                "durationType": "time",
+                "durationValue": 90,
+                "targetType": "open"
+              },
+              "description": "600m hard / 90s easy jog"
+            },
+            {
+              "order": 3,
+              "type": "cooldown",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy cooldown jog"
+            }
+          ]
+        },
+        {
+          "day": "wednesday",
+          "type": "rest",
+          "title": "Rest day",
+          "description": "Full rest — recovery is where adaptation happens.",
+          "steps": []
+        },
+        {
+          "day": "thursday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 9.5km at conversational effort.",
+          "targetDistanceMeters": 9500,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 9500,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "friday",
+          "type": "rest",
+          "title": "Rest day",
+          "description": "Full rest — recovery is where adaptation happens.",
+          "steps": []
+        },
+        {
+          "day": "saturday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 9km at conversational effort.",
+          "targetDistanceMeters": 9000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 9000,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "sunday",
+          "type": "long_run",
+          "title": "Long run",
+          "description": "Weekly long run, 15km at steady easy effort.",
+          "targetDistanceMeters": 15000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 15000,
+              "targetType": "pace",
+              "targetMin": 335,
+              "targetMax": 365,
+              "description": "Steady long run pace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekNumber": 12,
+      "phase": "taper",
+      "weeklyMileageTargetKm": 38,
+      "explanation": "Race week taper — ~50% below peak volume with sharp race-pace touches.",
+      "workouts": [
+        {
+          "day": "monday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 7km at conversational effort.",
+          "targetDistanceMeters": 7000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 7000,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "tuesday",
+          "type": "race_pace",
+          "title": "Race pace session",
+          "description": "2.3km at goal race pace, 5.5km total.",
+          "targetDistanceMeters": 5500,
+          "steps": [
+            {
+              "order": 1,
+              "type": "warmup",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy warmup jog"
+            },
+            {
+              "order": 2,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 2300,
+              "targetType": "pace",
+              "targetMin": 285,
+              "targetMax": 300,
+              "description": "Goal race pace"
+            },
+            {
+              "order": 3,
+              "type": "cooldown",
+              "durationType": "distance",
+              "durationValue": 1600,
+              "targetType": "pace",
+              "targetMin": 340,
+              "targetMax": 380,
+              "description": "Easy cooldown jog"
+            }
+          ]
+        },
+        {
+          "day": "wednesday",
+          "type": "rest",
+          "title": "Rest day",
+          "description": "Full rest — recovery is where adaptation happens.",
+          "steps": []
+        },
+        {
+          "day": "thursday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 7km at conversational effort.",
+          "targetDistanceMeters": 7000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 7000,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "friday",
+          "type": "rest",
+          "title": "Rest day",
+          "description": "Full rest — recovery is where adaptation happens.",
+          "steps": []
+        },
+        {
+          "day": "saturday",
+          "type": "easy_run",
+          "title": "Easy run",
+          "description": "Relaxed aerobic run, 7km at conversational effort.",
+          "targetDistanceMeters": 7000,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 7000,
+              "targetType": "pace",
+              "targetMin": 330,
+              "targetMax": 360,
+              "description": "Easy aerobic pace"
+            }
+          ]
+        },
+        {
+          "day": "sunday",
+          "type": "long_run",
+          "title": "Long run",
+          "description": "Weekly long run, 11.5km at steady easy effort.",
+          "targetDistanceMeters": 11500,
+          "steps": [
+            {
+              "order": 1,
+              "type": "steady",
+              "durationType": "distance",
+              "durationValue": 11500,
+              "targetType": "pace",
+              "targetMin": 335,
+              "targetMax": 365,
+              "description": "Steady long run pace"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
