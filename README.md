@@ -1,7 +1,6 @@
 # nextrun
 
 [![Deploy](https://github.com/luistorres/nextrun/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/luistorres/nextrun/actions/workflows/deploy.yml)
-[![CI](https://github.com/luistorres/nextrun/actions/workflows/ci.yml/badge.svg)](https://github.com/luistorres/nextrun/actions/workflows/ci.yml)
 
 AI-powered running coach that reads your Garmin data and builds an adaptive, periodized training plan.
 
